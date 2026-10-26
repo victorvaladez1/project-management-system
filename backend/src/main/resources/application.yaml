@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: project-management-system
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/project_management
+    username: project_user
+    password: ${POSTGRES_PASSWORD}
+
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+
+server:
+  port: 8080
